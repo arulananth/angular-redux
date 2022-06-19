@@ -1,0 +1,183 @@
+{
+    "userDetail": [
+      {
+        "id": "1",
+        "username": "Nicholas Gordon",
+        "position": "UI/UX Developer",
+        "bio": "When i first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+        "email": [
+            "nicholas.gordon@gmail.com",
+            "nicholas.gordon@gmail.com"
+            
+        ],
+        "dial": "n.gordon@ymsg.com",
+        "meeting": "http://go.betacall.com/meet/n.gordon",
+        "phone": [
+            "439-582-1578",
+            "621-770-7689"
+        ],
+        "image":"assets/img/user.png",
+        "status":"active"
+      },
+      {
+        "id": "2",
+        "username": "Bradley Malone",
+        "position": "Developer",
+        "bio": "When i first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+        "email": [
+          
+             "bradley.malone@gmail.com",
+             "bradley.malone@gmail.com"
+          
+        ],
+        "dial": "b.malone@ymsg.com",
+        "meeting": "http://go.betacall.com/meet/b.malone",
+        "phone": [
+            "456-582-3543",
+            "654-770-3456"
+        ],
+        "image":"assets/img/user1.jpg",
+        "status":"inactive"
+      },
+      {
+        "id": "3",
+        "username": "Johanna Stevens",
+        "position": "Project Manager",
+        "bio": "When i first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+        "email": [
+          
+            "johannas.stevens@gmail.com",
+            "johannas.stevens@gmail.com"
+          
+        ],
+        "dial": "j.stevens@ymsg.com",
+        "meeting": "http://go.betacall.com/meet/j.stevens",
+        "phone": [
+            "439-582-1578",
+            "621-770-7689"
+        ],
+        "image":"assets/img/user2.png",
+        "status":"active"
+      },
+      {
+        "id": "4",
+        "username": "Marvin Lambert",
+        "position": "Designer",
+        "bio": "When i first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+        "email": [
+          
+             "marvin.lambert@gmail.com",
+             "marvin.lambert@gmail.com"
+          
+        ],
+        "dial": "m.lambert@ymsg.com",
+        "meeting": "http://go.betacall.com/meet/m.lambert",
+        "phone": [
+            "412-582-5432",
+            "637-770-4567"
+        ],
+        "image":"assets/img/user3.jpg",
+        "status":"inactive"
+      },
+      {
+        "id": "5",
+        "username": "Teresa Lloyd",
+        "position": "PR agent",
+        "bio": "When i first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+        "email": [
+          
+             "marvin.lambert@gmail.com",
+             "marvin.lambert@gmail.com"
+          
+        ],
+        "dial": "m.lambert@ymsg.com",
+        "meeting": "http://go.betacall.com/meet/m.lambert",
+        "phone": [
+            "412-582-5432",
+            "637-770-4567"
+        ],
+        "image":"assets/img/user4.png",
+        "status":"active"
+      },
+      {
+        "id": "6",
+        "username": "Fred Haynes",
+        "position": "Support Team",
+        "bio": "When i first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+        "email": [
+          
+             "marvin.lambert@gmail.com",
+             "marvin.lambert@gmail.com"
+          
+        ],
+        "dial": "m.lambert@ymsg.com",
+        "meeting": "http://go.betacall.com/meet/m.lambert",
+        "phone": [
+            "412-582-5432",
+            "637-770-4567"
+        ],
+        "image":"assets/img/user5.jpg",
+        "status":"inactive"
+      },
+      {
+        "id": "7",
+        "username": "Rose Peters",
+        "position": "Project Manager",
+        "bio": "When i first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+        "email": [
+          
+             "marvin.lambert@gmail.com",
+            "marvin.lambert@gmail.com"
+          
+        ],
+        "dial": "m.lambert@ymsg.com",
+        "meeting": "http://go.betacall.com/meet/m.lambert",
+        "phone": [
+            "412-582-5432",
+            "637-770-4567"
+        ],
+        "image":"assets/img/user6.png",
+        "status":"inactive"
+      },
+      {
+        "id": "8",
+        "username": "Brain Watson",
+        "position": "Developer",
+        "bio": "When i first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+        "email": [
+          
+             "marvin.lambert@gmail.com",
+             "marvin.lambert@gmail.com"
+          
+        ],
+        "dial": "m.lambert@ymsg.com",
+        "meeting": "http://go.betacall.com/meet/m.lambert",
+        "phone": [
+            "412-582-5432",
+            "637-770-4567"
+        ],
+        "image":"assets/img/user7.png",
+        "status":"active"
+      },
+      {
+        "id": "9",
+        "username": "Hettie Richardson",
+        "position": "Developer",
+        "bio": "When i first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+        "email": [
+          
+             "marvin.lambert@gmail.com",
+             "marvin.lambert@gmail.com"
+          
+        ],
+        "dial": "m.lambert@ymsg.com",
+        "meeting": "http://go.betacall.com/meet/m.lambert",
+        "phone": [
+            "412-582-5432",
+            "637-770-4567"
+        ],
+        "image":"assets/img/user8.png",
+        "status":"active"
+      }
+    ]
+}
