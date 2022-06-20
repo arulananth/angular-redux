@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ContactRightComponent } from '../contact-right/contact-right.component';
 
 @Component({
   selector: 'app-contact',
@@ -10,7 +9,11 @@ import { ContactRightComponent } from '../contact-right/contact-right.component'
 export class ContactComponent implements OnInit {
 
   userDetails : any = [];
-  currentUser:any = {}
+  currentUser:any = {};
+  searchText : string;
+  page :any;
+  itemPerPage=5;
+  p = 1;
 
   constructor(private httpClient: HttpClient) { }
 
@@ -25,6 +28,11 @@ export class ContactComponent implements OnInit {
   }
   showDetail(item){
     this.currentUser=item;
+  }
+
+  onPageEvent(event: any) {
+    this.p = event;
+    console.log(event);
   }
 
 }

@@ -1,0 +1,60 @@
+<div class="contact-management">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-12 left-background">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 d-flex justify-content-between left-header">
+                        <div class="bar-toggle">
+                            <a class="font-icon-link" href="javascript:void(0)"><i class="fas fa-bars font-icons-left"></i></a>
+                            <span class="contact-title">Contacts</span>
+                        </div>
+                        <div class="sliders">
+                            <pagination-template
+                            #pagination="paginationApi" (pageChange)="onPageEvent($event)"
+                            >
+                            <div class="pagination-previous" >
+                                <a (click)="pagination.previous()" class="font-icon-link" href="javascript:void(0)"><i class="fas fa-angle-left font-icons-left font-icons-left-mbl"></i></a>
+                            </div>
+                            <div class="pagination-next">
+                                <a class="font-icon-link" href="javascript:void(0)" (click)="pagination.next()"><i class="fas fa-angle-right font-icons-left font-icons-left-mbl"></i></a>
+                            </div>
+                            </pagination-template>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 search-contact">
+                        <p class="mb-1 sear-cont">Search for a contact</p>
+                        <div class="">
+                            <input class="cont-name-email placeholder" [(ngModel)]="searchText" name="searchText" placeholder="Name, email or phone number" />
+                            <p class="pr-4 mb-0"><a class="font-icon-link search-post" href="javascript:void(0)"><i class="fas fa-search"></i></a></p>
+                        </div>
+                    </div>
+                    <ng-container *ngIf="( userDetails |  filter: searchText) as result">
+                    <div class="col-lg-12 col-md-12 d-flex justify-content-between search-contact-list align-items-center" *ngFor="let item of result | paginate: { itemsPerPage: itemPerPage, currentPage: p } | filter: searchText; let i = index">
+                        <div class="d-flex justify-content-between" (click)="showDetail(item)">
+                            <a href="javascript:void(0)"><img class="user-image" src="{{item.image}}" alt="image"></a>
+                            <span title="{{item.status}}" class="dot" [ngStyle]="{'background-color':item.status === 'active' ? 'green' : 'red' }"></span>
+                            <div class="pl-2">                                
+                                <p class="mb-0 user-name"><a class="user-link-name" href="javascript:void(0)">{{item.username}}</a></p>
+                                <p class="mb-0 user-dest">{{item.position}}</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="font-icon-link" href="javascript:void(0)"><i class="fas fa-comment-alt font-icons font-icons-left"></i></a>
+                            <a class="font-icon-link" href="javascript:void(0)"><i class="fas fa-phone-alt font-icons font-icons-left"></i></a>
+                            <a class="font-icon-link" href="javascript:void(0)"><i class="fas fa-ellipsis-h font-icons font-icons-left"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="text-center record-found" *ngIf="result.length === 0">No records found...</div>
+                    </div> 
+                    </ng-container>                   
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12" *ngIf="currentUser && currentUser.username">
+                <app-contact-right [showUserDetail] = "currentUser"></app-contact-right>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,9 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    min-height: 100vh;
+html, body { min-height: 100vh; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
 .left-background{
-    background-color: #f5f5ff;
+    background-color: #FAF9FF;
     min-height: 100vh;
 }
 .left-header{
@@ -24,15 +26,24 @@ body{
     font-size: 15px;
     opacity: 0.5;
 }
+.record-found{
+    font-size: 16px;
+    font-weight: 500;
+}
 .cont-name-email{
     font-size: 18px;
     font-weight: 500;
     width:100%;
     border:none;
     background: none;
+    height: 45px;
 }
 .cont-name-email:focus{
     background:none;
+}
+.cont-name-email:focus-visible{
+    background:none;
+    outline: none;
 }
 .cont-name-email:active{
     background:none;
@@ -82,6 +93,10 @@ body{
 .user-profile-detail{
     margin: 0 0 0 auto;   
 }
+.user-profile-detail-top{
+    margin: 0 0 0 auto;
+    padding: 0;
+}
 .users-profiles{
     padding-left: 15px;
     display: flex;
@@ -98,12 +113,19 @@ body{
     opacity: 0.5;
 } 
 .user-msg > button{
-    background: #6666ff;
+    background: #6B59CC;
     color: #fff;
     border: none;
     padding: 8px 15px;
     border-radius: 10px;
     margin-right: 10px;
+}
+.user-detail-width-top{
+    width: 100%;
+    padding-top: 30px;
+}
+.user-text-right{
+    text-align: right;
 }
 .user-detail-width{
     width: 90%;
@@ -125,7 +147,12 @@ body{
     background-color: #fff;
 }
 .font-icon-link{
-    color: #000;
+    color: #000;    
+}
+.search-post{
+    position: absolute;
+    top: 63px;
+    right: 65px;
 }
 .font-icon-link:hover{
     color: #000;
@@ -148,6 +175,243 @@ body{
     font-weight: 500;
     opacity: 0.5;
 }
+@media only screen and (min-width: 860px) and (max-width: 1100px){
+    .left-header {
+        padding: 25px 15px;
+    }
+    .search-post {
+        right: 30px;
+    }
+    .search-contact {
+        padding: 25px 20px;
+    }
+    .search-contact-list {
+        padding: 5px 20px 25px;
+    }
+    .dot {
+        left: 58px;
+    }    
+    .font-icons-left {
+        padding: 8px 8px;
+    }
+    /* right */
+    .right-content {
+        padding: 50px 20px;
+    }
+    .user-detail-width {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .user-profile-detail {
+        margin: 0;
+    }
+    .user-profile-detail-top {
+        padding: 0 15px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 860px){
+    .left-header {
+        padding: 25px 15px;
+    }
+    .search-post {
+        right: 30px;
+    }
+    .search-contact {
+        padding: 25px 10px;
+    }
+    .search-contact-list {
+        padding: 5px 10px 25px;
+    }
+    .dot {
+        left: 48px;
+    }
+    .user-detail-width {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .user-profile-detail {
+        margin: 0;
+    }
+    .font-icons-left {
+        padding: 8px 8px;
+    }
+    .user-name {
+        font-size: 14px;
+    }
+    .user-dest {
+        font-size: 14px;
+    }
+    .placeholder::placeholder{
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 400px) and (max-width: 460px){
+    .left-header {
+        padding: 25px 15px;
+    }
+    .search-post {
+        right: 30px;
+    }
+    .search-contact {
+        padding: 25px 20px;
+    }
+    .search-contact-list {
+        padding: 5px 20px 25px;
+    }
+    .dot {
+        left: 56px;
+    }
+}
+@media only screen and (min-width: 335px) and (max-width: 400px){
+    .font-icons-left-mbl {
+        padding: 8px 11px !important;
+    }
+    .left-header {
+        padding: 25px 15px;
+    }
+    .search-post {
+        right: 30px;
+    }
+    .search-contact {
+        padding: 25px 10px;
+    }
+    .search-contact-list {
+        padding: 5px 15px 25px;
+    }
+    .dot {
+        left: 52px;
+    }
+    .font-icons-left {
+        padding: 8px 8px;
+    }
+    .user-name {
+        font-size: 14px;
+    }
+    .user-dest {
+        font-size: 14px;
+    }
+    .placeholder::placeholder{
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 335px){
+    .font-icons-left-mbl {
+        padding: 8px 11px !important;
+    }
+    .left-header {
+        padding: 25px 10px;
+    }
+    .search-post {
+        right: 30px;
+    }
+    .search-contact {
+        padding: 25px 10px;
+    }
+    .search-contact-list {
+        padding: 5px 10px 25px;
+    }
+    .dot {
+        left: 49px;
+    }
+    .font-icons-left {
+        padding: 8px 8px;
+        margin-right: 5px;
+    }
+    .user-name {
+        font-size: 13px;
+    }
+    .user-dest {
+        font-size: 13px;
+    }
+    .placeholder::placeholder{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 991px) and (max-width: 1025px){
+    .right-content {
+        padding: 50px 20px;
+    }
+    .user-detail-width {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .user-profile-detail {
+        margin: 0;
+    }
+    .user-profile-detail-top {
+        padding: 0 15px;
+    }
+    .users-profiles {
+        padding-left: 10px;
+    }
+    .user-msg > button {
+        padding: 5px 8px;
+        border-radius: 7px;
+        margin-right: 5px;
+    }
+    .font-icons {
+        padding: 10px 10px;
+        margin-right: 10px;
+    }
+}
+@media only screen and (min-width: 772px) and (max-width: 991px){
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+}
+@media only screen and (min-width: 772px) and (max-width: 860px){
+    .right-content {
+        padding: 20px;
+    }
+    .user-profile-detail-top {
+        padding: 0 15px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 576px){
+    .right-content {
+        padding: 20px 20px;
+    }
+    .user-profile-detail-top {
+        padding: 15px;
+    }
+    .user-detail-width {
+        width: auto;
+    }
+    .user-text-fade{
+        text-align: center;
+    }
+    .font-icons {
+        padding: 10px 10px;
+        opacity: 0.5;
+        margin-right: 5px;
+    }
+    .user-text-center{
+        text-align: center;
+    }
+
+    .user-right-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+    }
+    .users-pro-detail > .user-profile-dev {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .users-profiles {
+        padding-left: 10px;
+    }
+    .user-msg > button {
+        padding: 5px 8px;
+        border-radius: 5px;
+        margin-right: 5px;
+    }
+    .font-icons{
+        padding: 8px 8px;
+    }
+    .user-profile-detail-top {
+        padding: 15px 0px 15px 15px;
+    }
+    .social-mbl{
+        padding-bottom: 15px;
+    }
+}
+

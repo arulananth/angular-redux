@@ -3,19 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ContactComponent } from './contact/contact.component';
-import { ContactRightComponent } from './contact-right/contact-right.component';
+import { ContactComponent } from './contacts/contact/contact.component';
+import { ContactRightComponent } from './contacts/contact-right/contact-right.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { storeLogger } from 'ngrx-store-logger';
-import { NgxPaginationModule } from 'ngx-pagination';
+import { FilterPipe } from './filter.pipe';
+import { ContactsModule } from './contacts/contacts.module';
+import {NgxPaginationModule} from 'ngx-pagination';
 @NgModule({
   declarations: [
     AppComponent,
     ContactComponent,
-    ContactRightComponent
+    ContactRightComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
@@ -25,8 +27,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     MatSliderModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxPaginationModule,
-    StoreModule.forRoot({})
+    ContactsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

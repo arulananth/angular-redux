@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ContactComponent } from '../contact/contact.component';
 
 @Component({
   selector: 'app-contact-right',

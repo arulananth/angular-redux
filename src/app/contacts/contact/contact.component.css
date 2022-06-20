@@ -1,0 +1,7 @@
+pagination-template {
+    display: flex;
+}
+pagination-template > div {
+    margin: 0px;
+    padding: 0px;
+}
